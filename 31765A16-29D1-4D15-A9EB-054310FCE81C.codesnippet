@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>canim</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>CABasicAnimation *&lt;#name#&gt;Animation = [CABasicAnimation animationWithKeyPath:@"&lt;#property#&gt;"];
+&lt;#name#&gt;Animation.fromValue = @(1);
+&lt;#name#&gt;Animation.toValue = @(0);
+&lt;#name#&gt;Animation.duration = 1.5;
+&lt;#name#&gt;Animation.beginTime = CACurrentMediaTime() + 0.1;
+&lt;#name#&gt;Animation.fillMode = kCAFillModeForwards;
+&lt;#name#&gt;Animation.removedOnCompletion = NO;
+[&lt;#layer#&gt; addAnimation:&lt;#name#&gt;Animation forKey:@"&lt;#property#&gt;"];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>31765A16-29D1-4D15-A9EB-054310FCE81C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Objective-C Add animation</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

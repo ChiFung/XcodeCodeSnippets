@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>gcolor</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    CAGradientLayer *layer = [[CAGradientLayer alloc]init];
+    layer.frame = self.view.bounds;
+    layer.colors = [NSArray arrayWithObjects:(id)[UIColor blackColor].CGColor,
+                    (id)[UIColor grayColor].CGColor,
+                    (id)[UIColor blackColor].CGColor,nil];
+    [self.view.layer insertSublayer:layer atIndex:0];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>89B16478-8B16-471F-BB26-9C4E270B1B86</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Objective-C gradient layer</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

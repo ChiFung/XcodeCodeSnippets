@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>push</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - Push  -
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    NSString *deviceTokenStr = [NSString stringWithFormat:@"%@",deviceToken];
+    
+    deviceTokenStr=[deviceTokenStr  stringByReplacingOccurrencesOfString:@" " withString:@""];
+    deviceTokenStr=[deviceTokenStr stringByReplacingOccurrencesOfString:@"&lt;" withString:@""];
+    deviceTokenStr=[deviceTokenStr stringByReplacingOccurrencesOfString:@"&gt;" withString:@""];
+    
+    NSLog(@"push token: %@", deviceTokenStr);
+    
+    // TODO: 往服务器注册用户与设备关系
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    NSLog(@"push error: %@", error);
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    NSLog(@"push data: %@", userInfo);
+    // TODO: 收到通知时的处理
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DAB47B1E-E3A0-4E6D-836D-F4CFA3C3C417</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>push callback</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>CF Push Callback</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

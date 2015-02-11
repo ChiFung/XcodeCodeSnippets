@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>sbb</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    UIBarButtonItem *backButton = [[UIBarButtonItem alloc]init];
+    backButton.title = @"返回";
+    [backButton setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:12]} forState:UIControlStateNormal];
+    self.navigationItem.backBarButtonItem = backButton;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F4670017-B651-4E93-AA9D-D026326EF75A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>set back button</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Objective-C Set BackButton</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
